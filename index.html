@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>homework 6.3</title>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <input type="text" class="input" id="nameInput" placeholder="Enter your name">
+    <div class="div_btn">
+        <button class="btn1" onclick="saveName()">Save</button>
+        <button class="btn2" onclick="loadName()">Load</button>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        function saveName() {
+            var name = document.getElementById("nameInput").value;
+            localStorage.setItem("username", name);
+            alert("Name saved!");
+        }
+
+        function loadName() {
+            var name = localStorage.getItem("username");
+            if (name) {
+                document.getElementById("output").innerText = "Your name: " + name;
+            } else {
+                document.getElementById("output").innerText = "Name not found";
+            }
+        }
+    </script>
+</body>
+
+</html>

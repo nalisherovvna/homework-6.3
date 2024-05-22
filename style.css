@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input {
+    height: 30px;
+    width: 300px;
+    margin-left: 480px;
+    margin-top: 270px;
+    background-color: rgba(43, 103, 156, 0.893);
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.btn1 {
+    background-color: rgb(87, 121, 160);
+    width: 150px;
+    height: 25px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn2{
+    background-color: rgb(87, 121, 160);
+    width: 150px;
+    height: 25px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.div_btn{
+    margin-top: 20px;
+    margin-left: 480px;
+}
